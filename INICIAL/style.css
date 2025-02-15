@@ -1,26 +1,32 @@
+body {
+  background-color: #020202; /* Puedes cambiar este color según tu preferencia */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .menu {
 padding: 10px;
-background-color: rgb(37, 36, 36);
+background-color: rgb(174, 164, 209);
 border: none;
 box-shadow: none;
 outline: none; 
-
 }
+
 .container-fluid {
-background-color:rgb(149, 120, 176);
+background-color:rgb(174, 164, 209);
 border: none;
 box-shadow: none;
 outline: none;
 }
+
 .navbar-nav{
 border: none;
 box-shadow: none;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-color: rgb(149, 120, 176);
-border: none;
-box-shadow: none; 
-outline: none;
+font-size: 25px;
 }
+
 .navbarNavAltMarkup {
 background-color: rgb(37, 36, 36);
 border: none;
@@ -29,19 +35,27 @@ outline: none;
 }
 
 .contenedor-titulo {
-height: 80vh;
-background-image: url(./SRC/fondo.png);
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.imagen img {
 display: flex;
 justify-content: center;
+margin-top: 20px; 
+margin-bottom: 50px;
+width: 100%; 
+height: auto;
 }
 
 text {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 75px;
-  fill: rgb(149, 120, 176);
+  fill: rgb(174, 164, 209);
   font-weight: bold;
   justify-content: center;
   position: absolute;
@@ -49,34 +63,29 @@ text {
 }
 .subtitulo {
 display: flex;
+bottom: 20px;
+width: 100%;
 flex-direction: column;
 justify-content: space-between;
-align-items: flex-end; 
-position: absolute;
-bottom: 5px;
+padding: 10px;
 color: white;
+margin-bottom: 20px;
+}
+.subtitulo .a, .subtitulo .b {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
 }
 
-.titulo h1, .subtitulo .a, .subtitulo .b {
-position: absolute;
-margin: 0;
-padding: 0;
-}
 .subtitulo .a  {
-font-size: 24px;
-font-weight: bold;
-text-align: right;
-right: 60px;
-bottom: 40px; 
+  text-align: left; 
 
 }
 .subtitulo .b {
-font-size: 24px;
-font-weight: bold;
-text-align: left;
-left: 60px;
-bottom: 40px; 
+  text-align: right;
+
 }
+
 footer {
   height: 100px;
   background-image: url(./SRC/footer.png);
