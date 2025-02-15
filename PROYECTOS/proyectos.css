@@ -1,0 +1,43 @@
+.menu {
+    padding: 10px;
+    background-color: rgb(8, 8, 8);
+    border: none;
+    box-shadow: none;
+    outline: none; 
+    }
+.container-fluid {
+    background-color:rgb(149, 120, 176);
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+.navbar-nav{
+    border: none;
+    box-shadow: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(149, 120, 176);
+    border: none;
+    box-shadow: none; 
+    outline: none;
+}
+.navbarNavAltMarkup {
+    background-color: rgb(3, 3, 3);
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.card-pres{
+background-image: url("./SRC/fondo.png") ;
+background-size: cover;
+background-repeat: no-repeat;
+height: 25vh;
+padding: 20px;
+}
+
+body {
+background-color: rgb(145, 134, 156);;
+background-size: cover;
+margin: 0;
+font-family: Arial, sans-serif;
+}
