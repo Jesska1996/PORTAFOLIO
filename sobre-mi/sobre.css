@@ -1,0 +1,127 @@
+.menu {
+    padding: 10px;
+    background-color: rgb(37, 36, 36);
+    border: none;
+    box-shadow: none;
+    outline: none; 
+    }
+    .container-fluid {
+    background-color:rgb(149, 120, 176);
+    border: none;
+    box-shadow: none;
+    outline: none;
+    }
+    .navbar-nav{
+    border: none;
+    box-shadow: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(149, 120, 176);
+    border: none;
+    box-shadow: none; 
+    outline: none;
+    }
+    .navbarNavAltMarkup {
+    background-color: rgb(37, 36, 36);
+    border: none;
+    box-shadow: none;
+    outline: none;
+    }
+    body {
+    background-color: rgb(145, 134, 156);;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    }
+    .sobre-a {
+        display: flex;
+        justify-content: space-between;  /* Distribuye los elementos en una fila */
+        align-items: center;  /* Centra los elementos verticalmente */
+        padding: 10px;
+        gap: 20px;
+        width: 100%;
+    }
+    .sobre-a .saludo-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        flex: 1;
+    }
+    
+    .sobre-a .a1 {
+    margin-top: 10px;
+    flex: 1;
+    }
+    
+    .sobre-a .yo {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 1;
+    }
+    
+    .sobre-b {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    }
+    
+    .sobre-b .b1, .sobre-b .b2 {
+        flex: 1;  /* Ambos elementos se distribuyen equitativamente */
+    }
+    
+    
+    
+    
+    .sobre-c {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    }
+    
+    .sobre-c .favorite {
+    grid-column: span 3;
+    }
+    .sobre-c .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    
+    img {
+    display: block; /* Evita que la imagen se comporte como inline */
+    max-width: 100%; /* Evita que se desborde */
+    }
+    
+    h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color:  rgb(46, 16, 66);
+    text-align: center;  
+    }
+    
+    h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color:  rgb(6, 2, 8);
+    text-align: center; 
+    }
+    
+    footer {
+    height: 100px;
+    background-image: url("./SRC/footer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    filter: opacity(0.9);
+    }
+    // Required Bootstrap imports
+    @import "../node_modules/bootstrap/scss/variables";
+    @import "../node_modules/bootstrap/scss/variables-dark";
+    @import "../node_modules/bootstrap/scss/maps";
+    @import "../node_modules/bootstrap/scss/mixins";
+    @import "../node_modules/bootstrap/scss/root";
