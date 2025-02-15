@@ -32,32 +32,33 @@ background-size: cover;
 margin: 0;
 font-family: Arial, sans-serif;
 }
-.sobre-a {
-    display: flex;
-    justify-content: space-between;  /* Distribuye los elementos en una fila */
-    align-items: center;  /* Centra los elementos verticalmente */
+.saludo-1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    color:  rgb(46, 16, 66);
+    text-align: center; 
+    padding: 20px;
+}
+.saludo-2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    color:  rgb(13, 13, 13);
+    text-align: center; 
     padding: 10px;
-    gap: 20px;
-    width: 100%;
-}
-.sobre-a .saludo-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    flex: 1;
 }
 
-.sobre-a .a1 {
-margin-top: 10px;
-flex: 1;
-}
-
-.sobre-a .yo {
-max-width: 30%;
+.col-sm .a2 {
+max-width: 90%;
 height: auto;
 border-radius: 50%;
 object-fit: cover;
-flex: 1;
+}
+.col-sm .a1 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 20px;
+color:  rgb(13, 13, 13);
+text-align: justify; 
+padding: 10px;
 }
 
 .sobre-b {
@@ -95,12 +96,6 @@ display: block; /* Evita que la imagen se comporte como inline */
 max-width: 100%; /* Evita que se desborde */
 }
 
-h1 {
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 40px;
-color:  rgb(46, 16, 66);
-text-align: center;  
-}
 
 h2 {
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
