@@ -27,60 +27,52 @@ box-shadow: none;
 outline: none;
 }
 body {
-height: 80vh;
 background-color: rgb(145, 134, 156);;
 background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
 margin: 0;
 font-family: Arial, sans-serif;
 }
-
 .sobre-a {
-display: flex;
-flex-direction: row;
-justify-content: space-between; 
-padding: 10px;
-gap: 10px;
-align-items: center;
-width: 100%;
-text-align: left;
+    display: flex;
+    justify-content: space-between;  /* Distribuye los elementos en una fila */
+    align-items: center;  /* Centra los elementos verticalmente */
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
 }
-.text-container {
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
-.saludo-container {
-display: flex;
-flex-direction: column;
-gap: 5px; /* Espacio entre el h1 y h2 */
+.sobre-a .saludo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
 }
 
-.sobre-a .yo {
-display: flex;
-max-width: 30%;
-height: 30vh;
-border-radius: 50%;
-object-fit: cover;
-}
-.sobre-a .sobre-a .yo .saludo-container .text-container {
+.sobre-a .a1 {
+margin-top: 10px;
 flex: 1;
 }
 
+.sobre-a .yo {
+max-width: 30%;
+height: auto;
+border-radius: 50%;
+object-fit: cover;
+flex: 1;
+}
 
 .sobre-b {
 display: flex;
 gap: 20px;
 padding: 20px;
 }
-.sobre-b .b1,
-.sobre-b .b2 {
-flex: 1;
+
+.sobre-b .b1, .sobre-b .b2 {
+    flex: 1;  /* Ambos elementos se distribuyen equitativamente */
 }
-.sobre-b .b3 {
-flex: 1;
-}
+
+
+
+
 .sobre-c {
 text-align: center;
 padding: 20px;
@@ -90,13 +82,14 @@ gap: 20px;
 }
 
 .sobre-c .favorite {
-    grid-column: span 3;
+grid-column: span 3;
 }
 .sobre-c .list {
 display: flex;
 flex-direction: column;
 gap: 10px;
 }
+
 img {
 display: block; /* Evita que la imagen se comporte como inline */
 max-width: 100%; /* Evita que se desborde */
