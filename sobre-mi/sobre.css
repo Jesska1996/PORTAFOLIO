@@ -83,7 +83,20 @@
         flex: 1;  /* Ambos elementos se distribuyen equitativamente */
     }
     
-    
+    .card-pres{
+        background-image: url("./SRC/fondo.png") ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 25vh;
+        padding: 20px;
+        }
+        
+        body {
+        background-color: rgb(145, 134, 156);;
+        background-size: cover;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        }
     
     
     .sobre-c {
