@@ -30,7 +30,7 @@ outline: none;
     
 /* DESCRIPCION PROYECTO*/
 .card-title-header {
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 60px; 
 font-weight: bold;
 text-align: center;
@@ -74,28 +74,54 @@ body {
 background-color: rgb(9, 9, 9);
 padding: 20px;
 }
-.card-pro {
-    border-radius: 20%;
-    height: 350px; /* Altura fija para que todas las tarjetas sean uniformes */
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.contenedor-1 {
+padding: 30px;
+}
 
-  .card-img-top {
-    height: 150px; /* Fija la altura de la imagen */
-    object-fit: cover; /* Asegura que la imagen mantenga proporciones al ajustarse al tamaño */
-    border-radius: 8px 8px 0 0; /* Redondeo solo en la parte superior */
-  }
-  .card-body {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+.col {
+
+padding: 20px;
+border: 10px;
+border-color: rgb(174, 164, 209);;
+border-radius: 20px;
+}
+
+.card-pro {
+border-radius: 20%;
+max-height: 350px; /* Altura fija para que todas las tarjetas sean uniformes */
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.card-img-top {
+height: 150px; 
+width: 150px;
+border-radius: 40%;
+align-content: center;
+}
+
+.card-body {
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.card-title {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 40px; 
+font-weight: bold;
+text-align: center;
+align-content: center;
+color: rgb(249, 239, 239);
+}
+
+.card-text {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 25px;
+text-align: justify;
+color:  rgb(174, 164, 209);
+}
