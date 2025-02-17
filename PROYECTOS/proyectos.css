@@ -181,3 +181,19 @@ background-color: #d1a6ff;
       width: 100%; /* Una tarjeta por fila en pantallas muy pequeñas */
     }
   }
+  footer {
+    height: 100px;
+    background-image: url("./SRC/footer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    filter: opacity(0.9);
+}
+    // Required Bootstrap imports
+    @import "../node_modules/bootstrap/scss/variables";
+    @import "../node_modules/bootstrap/scss/variables-dark";
+    @import "../node_modules/bootstrap/scss/maps";
+    @import "../node_modules/bootstrap/scss/mixins";
+    @import "../node_modules/bootstrap/scss/root";
