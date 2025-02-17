@@ -30,25 +30,27 @@ outline: none;
     
 /* DESCRIPCION PROYECTO*/
 .card-title-header {
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 60px; 
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 35px; 
 font-weight: bold;
 text-align: center;
 align-content: center;
 color: rgb(249, 239, 239);
-margin-bottom: 10px;
-margin-left: 220px;
+margin-left: 9%;
 }
 .card-pres {
 background-image: url("./SRC/fondo.png");
 background-size: cover;
 background-repeat: no-repeat;
-height: 25vh;
+height: 30vh;
 padding: 20px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
+overflow: hidden; 
+width: 100%;
+box-sizing:border-box;
 }
 
 .contenedor-titulo {
@@ -62,66 +64,120 @@ text-align: center;
 
 .descpripcion-pagina {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 25px;
+font-size: 15px;
 text-align: justify;
 color:  rgb(174, 164, 209);
 margin-left: 9%;
-margin-right: 29%;
+margin-right: 30%;
+max-width: 85%;
 }
     
-/* TARJETAS  */
 body {
 background-color: rgb(9, 9, 9);
 padding: 20px;
 }
-.contenedor-1 {
+
+/* TARJETAS  */
+.tarjetas {
 padding: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;
+gap: 20px;
 }
 
-.col {
-
-padding: 20px;
-border: 10px;
-border-color: rgb(174, 164, 209);;
-border-radius: 20px;
-}
-
-.card-pro {
-border-radius: 20%;
-max-height: 350px; /* Altura fija para que todas las tarjetas sean uniformes */
+.card2 {
+background-color: rgba(174, 164, 209, 0.676); 
+border-radius: 12px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+width: 300px; 
 width: 300px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+padding: 25px;
 }
-
-.card-img-top {
-height: 150px; 
-width: 150px;
-border-radius: 40%;
-align-content: center;
-}
-
-.card-body {
-padding: 20px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-
-}
-
-.card-title {
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 40px; 
+.card-titulo{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 35px; 
 font-weight: bold;
 text-align: center;
 align-content: center;
 color: rgb(249, 239, 239);
 }
-
+.card-subtitulo{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 35px; 
+font-weight: bold;
+text-align: left;
+color: black;
+}
 .card-text {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 25px;
+font-size: 15px;
 text-align: justify;
-color:  rgb(174, 164, 209);
+color:  black;
 }
+.imgBx {
+position: relative;
+height:150px;
+overflow: hidden;
+clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.imgBx img {
+width: 100%; 
+height:100%;
+object-fit: cover; 
+}
+
+.content {
+padding: 16px;
+position: relative;
+margin-top: 15px;
+}
+
+.content ul {
+list-style: none;
+padding: 0;
+
+}
+
+.content ul li {
+font-size: 16px;
+margin: 4px 0;
+}
+
+p.card-text {
+font-size: 14px;
+margin-top: 8px;
+}
+.button-container {
+position: absolute;
+top: -20px; /* Posiciona el botón en el desnivel */
+left: 50%;
+transform: translateX(-50%);
+}
+
+.button {
+background-color:white;
+color: black;
+padding: 8px 16px;
+border-radius: 20px;
+text-decoration: none;
+font-weight: bold;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s ease;
+}
+.button:hover {
+background-color: #d1a6ff;
+}
+@media (max-width: 768px) {
+    .card2 {
+      width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card2 {
+      width: 100%; /* Una tarjeta por fila en pantallas muy pequeñas */
+    }
+  }
